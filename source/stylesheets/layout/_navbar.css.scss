@@ -40,13 +40,14 @@
 
 /* Navbar standard link */
 .navbar-wagon-link {
-  color: #616668;
+  color: $gray-light;
   font-size: 14px;
-}
-.navbar-wagon-link:hover {
+  &:hover {
   color: #da552f;
   text-decoration: none;
 }
+}
+
 
 /* Navbar right button */
 .navbar-wagon-button {
@@ -54,16 +55,17 @@
   padding: 0 20px;
   border-radius: 20em;
   line-height: 40px;
-  background-color: #D23333;
+  background-color: $red;
   color: white;
   font-size: 14px;
-  border: 2px solid #D23333;
-}
-.navbar-wagon-button:hover {
+  border: 2px solid $red;
+    &:hover {
   color: white;
-  background: #D23333;
+  background: $red;
   border-color: #ac2626;
 }
+}
+
 
 /* Navbar search form */
 .navbar-wagon-search {
@@ -94,10 +96,13 @@
   padding: 0 10px;
   font-size: 14px;
   outline: none;
-}
-.navbar-wagon-search-input:focus  {
+  &:focus  {
   border: 1px solid #CCCCCC;
 }
+}
+// .navbar-wagon-search-input:focus  {
+//   border: 1px solid #CCCCCC;
+// }
 
 /* Navbar dropdown menu */
 .navbar-wagon-dropdown-menu {
@@ -112,11 +117,13 @@
   font-size: 15px !important;
   line-height: 22px !important;
   padding: 10px 20px;
-}
-.navbar-wagon-dropdown-menu li > a:hover {
+
+  &:hover {
   background: transparent !important;
   color: black !important;
 }
+}
+
 .navbar-wagon-dropdown-menu:before {
   content: ' ';
   height: 10px;
